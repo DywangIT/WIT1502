@@ -1478,15 +1478,24 @@ img {
 }
 .header {
   width: 100%;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  height: 88px;
+  display: flex;
+  align-items: center;
   transition: padding-top 300ms cubic-bezier(0.4, 0, 0.2, 1), padding-bottom 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: height 200ms cubic-bezier(0.4, 0, 0.2, 1), background-color 200ms cubic-bezier(0.4, 0, 0.2, 1);
   background: transparent;
   position: fixed;
   top: 0;
   z-index: 1;
   font-size: 1.4rem;
   font-weight: 600;
+}
+.header.scrolled {
+  height: 72px;
+  background: #fff;
+}
+.header.scrolled .navbar__link {
+  color: rgb(33, 43, 54);
 }
 .header-main {
   display: flex;
@@ -1558,8 +1567,7 @@ img {
 }
 @media (max-width: 767.98px) {
   .header {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    height: 72px;
   }
 }
 
