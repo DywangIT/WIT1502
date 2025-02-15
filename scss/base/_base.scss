@@ -43,3 +43,19 @@ img {
     display: block;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+
+/* Màu của thanh cuộn */
+::-webkit-scrollbar-thumb {
+    background: #ccc; 
+    border-radius: 10px;
+}
+
+/* Khi di chuột vào thanh cuộn */
+::-webkit-scrollbar-thumb:hover {
+    background: #bbb;
+}

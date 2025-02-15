@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -95,6 +96,21 @@ img {
 
 img {
   display: block;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Màu của thanh cuộn */
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+/* Khi di chuột vào thanh cuộn */
+::-webkit-scrollbar-thumb:hover {
+  background: #bbb;
 }
 
 .row > *, .container-fluid, .container {
