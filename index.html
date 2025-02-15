@@ -13,38 +13,101 @@
             rel="stylesheet"
         />
         <!-- favicon -->
-        <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
-        <link rel="manifest" href="./assets/favicon/manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
         <!-- js -->
         <script src="./assets/js/script.js"></script>
     </head>
     <body>
+        <!-- header -->
         <header class="header">
             <div class="container">
                 <div class="header-main">
                     <!-- logo -->
-                    <a href="#!">
-                        <img
-                            src="./assets/img/logo.png"
-                            alt=""
-                            class="header__logo"
-                        />
-                    </a>
+                    <div class="header-logo">
+                        <a href="#!">
+                            <img
+                                src="./assets/img/logo.png"
+                                alt=""
+                                class="header__logo"
+                            />
+                        </a>
+                        <span class="version">v2.0.0</span>
+                    </div>
 
                     <!-- navbar -->
                     <nav class="navbar d-md-none">
@@ -150,33 +213,6 @@
                                 </a>
                             </li>
                         </ul>
-                        <!-- sidebar info -->
-                        <div class="sidebar-info">
-                            <ul class="sidebar-info__list">
-                                <li class="sidebar-info__item">
-                                    <div class="sidebar-info__heading">
-                                        <p class="sidebar-info__title">
-                                            Introductions
-                                        </p>
-                                        <button class="sidebar-info__arrow-btn">
-                                            <img
-                                                src="./assets/img/arrow-down.svg"
-                                                alt=""
-                                                class="sidebar-info__arrow"
-                                            />
-                                        </button>
-                                    </div>
-                                    <p class="sidebar-info__text">
-                                        Lorem ipsum dolor sit amet consectetur
-                                        adipisicing elit. At quo eligendi
-                                        incidunt sunt alias tempore voluptate
-                                        eum, nemo earum sed repellat qui cumque
-                                        nesciunt a fuga ut? Adipisci, veritatis
-                                        illo?
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
 
                     <!-- overlay -->
@@ -207,8 +243,64 @@
                 </div>
             </div>
         </header>
-        <div class="hero">
-            <img src="./assets/img/hero-bg.png" alt="" class="hero-bg" />
-        </div>
+
+        <main>
+            <!-- hero -->
+            <div class="hero">
+                <img src="./assets/img/hero-bg.png" alt="" class="hero-bg" />
+            </div>
+
+            <div class="container">
+                <div class="qna">
+                    <!-- item -->
+                    <div class="qna-item">
+                        <div class="qna-item__heading">
+                            <p class="qna-item__title">
+                                1.Lịch sử hình thành câu lạc bộ
+                            </p>
+                            <img
+                                src="./assets/img/arrow-down.svg"
+                                alt=""
+                                class="qna-item__arrow"
+                            />
+                        </div>
+                        <div class="qna-item__info hide">
+                            <p class="qna-item__info-text">
+                                IT PTIT Club là câu lạc bộ học thuật trực thuộc
+                                khoa CNTT 1 của Học viện Công nghệ Bưu chính
+                                Viễn thông. CLB được hình thành từ sự hợp nhất
+                                của 2 CLB kỳ cựu nhất trong Học viện là CLB SRC
+                                PTIT và một số thành viên của CLB lập trình Pro
+                                PTIT vào năm 2013. Sau 10 năm hợp nhất, IT PTIT
+                                đã đạt được rất nhiều thành công lớn.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="qna-item">
+                        <div class="qna-item__heading">
+                            <p class="qna-item__title">
+                                2.CLB có chức năng gì?
+                            </p>
+                            <img
+                                src="./assets/img/arrow-down.svg"
+                                alt=""
+                                class="qna-item__arrow"
+                            />
+                        </div>
+                        <div class="qna-item__info hide">
+                            <p class="qna-item__info-text">
+                                Gắn kết các thành viên CLB với Khoa CNTT và Học
+                                viện. Kết nối sinh viên với các cuộc thi và giới
+                                thiệu các cơ hội nghề nghiệp. Là môi trường học
+                                tập sáng tạo, năng động, giúp đỡ thành viên CLB
+                                đạt thành tích cao trong học tập, phát triển tốt
+                                các kỹ năng chuyên môn.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
